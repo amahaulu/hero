@@ -1,16 +1,22 @@
 // adds packages for superheroes and supervillains
 const superheroes = require('superheroes');
 const supervillains = require('supervillains');
+
+// adds package for famous last words
 const famousLastWords = require('famous-last-words');
 
 //saves two variables of a random hero and villian
 var mySuperHeroName = superheroes.random();
 var mySuperVillainName = supervillains.random();
-var myFamousLastWords = famous-last-words.random();
+
+//saves one variable of random FLW
+var myFamousLastWords = famousLastWords[10];
 
 //displays the hero and villain to the console
 console.log(mySuperHeroName);
 console.log(mySuperVillainName);
+
+//displays the FLW to the console
 console.log(myFamousLastWords);
 
 // adds package for inspiration quote and displays it
@@ -34,3 +40,4 @@ fs.writeFileSync("file1.txt", mySuperHeroName);
 fs.writeFileSync("file2.txt", mySuperVillainName);
 fs.writeFileSync("file3.txt", myQuote);
 fs.writeFileSync("file4.txt", myMovie);
+fs.writeFileSync("file5.txt", myFamousLastWords);
